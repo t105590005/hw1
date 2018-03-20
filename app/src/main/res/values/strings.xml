@@ -1,9 +1,13 @@
 <resources>
-    <string name="app_name">婚姻建議</string>
-    <string name="sex">性別</string>
-    <string name="age">年齡</string>
-    <string name="editsex">請輸入性別</string>
-    <string name="editage">請輸入年齡</string>
-    <string name="button">確定</string>
-    <string name="out"/>
+    <string name="app_name">HW#2:曾祥語</string>
+    <string name="sex">sex</string>
+    <string name="sex_hint">(enter sex)</string>
+    <string name="age">age</string>
+    <string name="age_hint">(enter age)</string>
+    <string name="btn_ok">determine</string>
+    <string name="suggestion">suggestion : </string>
+    <string name="sug_not_hurry">not hurry</string>
+    <string name="sug_get_married">get marry</string>
+    <string name="sug_find_couple">find a couple</string>
+    <string name="sex_male">male</string>
 </resources>

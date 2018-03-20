@@ -2,63 +2,63 @@ package com.example.user.a105590005hw1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-import java.text.NumberFormat;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    EditText sex;
-    EditText age;
+
+    private EditText mEdtSex, mEdtAge;
+    private Button mBtnOK;
+    private TextView mTxtR;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        age=(EditText)findViewById(R.id.editText3);
-        sex=(EditText)findViewById(R.id.editText);
-        final TextView out = (TextView)findViewById(R.id.textView3);
-        Button submit = (Button)findViewById(R.id.button);
-        submit.setOnClickListener(new Button.OnClickListener() {
-            public void onClick(View arg0) {
 
-                if ( !("".equals(age.getText().toString()) || "".equals(sex.getText().toString())) )
-                {
-                    float fAge = Float.parseFloat(age.getEditableText().toString());
-                    if("male".equals(sex.getEditableText().toString()))
-                    {
-                        if(fAge<30){
-                            out.setText("建議:not hurry");
-                        }
-                        else if(fAge>35){
-                            out.setText("建議:find couple");
-                        }
-                        else{
-                            out.setText("建議:get marry");
-                        }
-                    }
-                    else if("female".equals(sex.getEditableText().toString()))
-                    {
-                        if(fAge<28){
-                            out.setText("建議:not hurry");
-                        }
-                        else if(fAge>32){
-                            out.setText("建議:find couple");
-                        }
-                        else{
-                           out.setText("建議:get marry");
-                        }
-                    }
-                    else{
-                        out.setText("輸入錯誤");
-                    }
-                }
-                else {
-                    out.setText("尚未輸入資料");
-                }
-            }
-        }
-        );
+        mEdtSex = (EditText) findViewById(R.id.edtSex);
+        mEdtAge = (EditText) findViewById(R.id.edtAge);
+        mBtnOK = (Button) findViewById(R.id.btnOK);
+        mTxtR = (TextView) findViewById(R.id.txtR);
+
+        mBtnOK.setOnClickListener(btnOKOnClick);
     }
+
+    private View.OnClickListener btnOKOnClick = new View.OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            String strSex = mEdtSex.getText().toString();
+            int iAge = Integer.parseInt(mEdtAge.getText().toString());
+
+            String strSug = getString(R.string.suggestion);
+            if (strSex.equals(getString(R.string.sex_male)))
+                if (iAge < 28) {
+                    strSug += getString(R.string.sug_not_hurry);
+                    Log.d("MarriSug", "man, don't hurry");
+                } else if (iAge > 33) {
+                    strSug += getString(R.string.sug_get_married);
+                    Log.d("MarriSug", "man, hurry to get married!");
+                } else {
+                    strSug += getString(R.string.sug_find_couple);
+                    Log.d("MarriSug", "man, start to find girlfriend!");
+                }
+            else
+            if (iAge < 25) {
+                strSug += getString(R.string.sug_not_hurry);
+                Log.d("MarriSug", "woman, don't hurry!");
+            } else if (iAge > 30) {
+                strSug += getString(R.string.sug_get_married);
+                Log.d("MarriSug", "woman, hurry to get married!");
+            } else {
+                strSug += getString(R.string.sug_find_couple);
+                Log.d("MarriSug", "woman, start to find boyfriend!");
+            }
+
+            mTxtR.setText(strSug);
+        }
+    };
 }
