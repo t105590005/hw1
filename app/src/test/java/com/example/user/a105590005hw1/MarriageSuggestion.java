@@ -3,9 +3,7 @@ package com.example.user.a105590005hw1;
 /**
  * Created by user on 2018/3/25.
  */
-/**
- * Created by user on 2018/3/25.
- */
+
 public class MarriageSuggestion {
     public String getSuggestion(String strSex,int age,int family){
         String strSug = "建議：";
