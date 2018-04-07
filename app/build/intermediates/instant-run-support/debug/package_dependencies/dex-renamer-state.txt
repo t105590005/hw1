@@ -1,0 +1,4 @@
+#Sun Apr 08 00:38:19 CST 2018
+base.0=E\:\\MyHW4.1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+path.0=classes.dex
+renamed.0=classes.dex

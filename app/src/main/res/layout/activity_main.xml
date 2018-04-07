@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.user.myapplication.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="性別:"
+                android:textSize="25sp" />
+
+            <RadioGroup
+                android:id="@+id/radGrp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/radBtnMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/male"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/radBtnFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/female"
+                    android:textSize="25sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="年齡:"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/spnAge"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:entries="@array/Age" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="興趣:"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/chk1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/music"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/chk2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sing"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/chk3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dance"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/chk4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/travel"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/chk5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reading"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/chk6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/writing"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/chk7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/climbing"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/chk8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/swim"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/chk9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eating"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/chk10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/drawing"
+                android:textSize="25sp" />
+            <CheckBox
+                android:id="@+id/chk11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/basketball"
+                android:textSize="25sp" />
+            <CheckBox
+                android:id="@+id/chk12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/computer"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnOK"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="確認"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txtSug"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="建議:"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txtHob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="你的興趣:"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

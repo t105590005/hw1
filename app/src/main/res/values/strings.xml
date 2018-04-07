@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">作業四之一:曾祥語</string>
+    <string name="male">男生</string>
+    <string name="female">女生</string>
+    <string name="music">音樂</string>
+    <string name="sing">唱歌</string>
+    <string name="dance">跳舞</string>
+    <string name="travel">旅行</string>
+    <string name="reading">閱讀</string>
+    <string name="writing">寫作</string>
+    <string name="climbing">爬山</string>
+    <string name="swim">游泳</string>
+    <string name="eating">美食</string>
+    <string name="drawing">繪畫</string>
+    <string name="basketball">籃球</string>
+    <string name="computer">電腦</string>
+    <string-array name="Age">
+        <item>(男生)小於30歲,(女生)小於28歲</item>
+        <item>(男生)30到40歲,(女生)28到35歲</item>
+        <item>(男生)大於40歲,(女生)大於35歲</item>
+    </string-array>
+</resources>
