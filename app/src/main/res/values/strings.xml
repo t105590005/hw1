@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">作業七:曾祥語</string>
+    <string name="result">判定輸贏：</string>
+    <string name="total">全部局數：</string>
+    <string name="player_win">玩家贏：</string>
+    <string name="comupter_win">電腦贏：</string>
+    <string name="draw">平手：</string>
+</resources>
